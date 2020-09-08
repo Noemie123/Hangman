@@ -1,0 +1,196 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.8em;
+    margin: auto;
+}
+
+
+/* titles */
+
+h1 {
+    color: lightseagreen;
+    margin: 25px 0 20px 0;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+h6 {
+    font-style: italic;
+    font-size: 0.8em;
+    color: lightseagreen;
+}
+
+
+/* layout */
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    height: 800px;
+}
+
+.col-12 {
+    width: 100%;
+    font-size: 1.4em;
+}
+
+#vocab {
+    margin-bottom: 25px;
+}
+
+#wordDef,
+#wordFound,
+wordFrench {
+    width: 60%;
+    margin: auto;
+}
+
+#wordFound {
+    padding: 25px 0;
+}
+
+#wordDef,
+#wordFrench {
+    margin-bottom: 65px;
+    font-size: 30px;
+}
+
+.col-6 {
+    width: 49%;
+}
+
+.divCont {
+    margin: 30px 0;
+}
+
+#imgDisplay {
+    height: 430px;
+    padding-top: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.esp {
+    width: 25px;
+}
+
+#refreshBtn,
+#sendBtn {
+    padding: 10px 15px;
+    font-size: larger;
+    background-color: lightseagreen;
+    color: white;
+}
+
+#buttonSend {
+    display: none;
+}
+
+
+/* content */
+
+input {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+#underscore {
+    margin-left: 25px;
+}
+
+#comments {
+    font-size: 0.8em;
+    font-style: italic;
+    color: red;
+}
+
+#lettersChosen {
+    font-size: 0.8em;
+}
+
+#errorMsg {
+    color: red;
+    font-size: 1.5em;
+}
+
+#reponse {
+    display: none;
+}
+
+#keepTrying {
+    color: lightseagreen;
+}
+
+#related {
+    font-size: 0.7em;
+}
+
+.definition {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+#wordFrench {
+    display: none;
+}
+
+@media all and (max-width: 1400px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        height: auto;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    #errorMsg,
+    h5 {
+        display: none;
+    }
+    #wordFrench {
+        display: block;
+    }
+    #wordDef,
+    #wordFound,
+    #wordFrench {
+        width: 95%;
+        margin: auto;
+    }
+    #mot {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #buttonSend {
+        display: block;
+    }
+    #underscore {
+        flex-wrap: wrap;
+    }
+    #lettersChosen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

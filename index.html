@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/png" href="libs/images/logo.png" />
+
+    <link rel="stylesheet" href="libs/css/style.css">
+
+    <title>Dave the developer</title>
+</head>
+
+<body>
+    <div id="essai"></div>
+    <h1>English Hangman</h1>
+    <h3>Find the word before Dave the developer got hanged !</h3>
+
+
+    <div class="container">
+        <div class="col-6">
+            <h2>Write a letter</h2>
+            <h5>(and then press the ENTER key)</h5>
+
+
+            <input type="text" id="text1">
+            <div id="buttonSend">
+                <button type="button" id="sendBtn">Send</button>
+            </div>
+
+            <div id="mot" class="column">
+                <p>Word to find :</p>
+                <p id="underscore" class="row"></p>
+            </div>
+
+            <div id="comments" class="divCont"></div>
+            <div id="lettersChosen" class="divCont"></div>
+            <div id="nbPendu" class="divCont"></div>
+            <div id="errorMsg" class="divCont"></div>
+        </div>
+        <div class="column col-6">
+            <div id="imgDisplay"></div>
+            <p id="keepTrying"></p>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div id="buttonDisplay">
+            <p id="related">Words to find are related to web development, IT, display/layout...</p>
+            <h6>12 attempts to save Dave... Good luck!</h6>
+        </div>
+    </div>
+
+    <div id="vocab" class="col-12">
+        <div id="wordFound"></div>
+        <div id="wordDef"></div>
+        <div id="wordFrench"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="libs/js/main.js" defer></script>
+</body>
+
+</html>
